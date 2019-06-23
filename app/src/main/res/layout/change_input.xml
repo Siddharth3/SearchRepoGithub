@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/actionButtonStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <TextView
+        android:id="@+id/change"
+        style="@style/wrap_wrap"
+        android:text="@string/change_input_type"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

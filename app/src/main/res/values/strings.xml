@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SearchRepoGithub</string>
+    <string name="type_here">Type here..</string>
+    <string name="network_error_message">Something went wrong</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="no_internet_error">No Internet Connection!</string>
+    <string name="project_link">Project Link:</string>
+    <string name="description">Description:</string>
+    <string name="get_contributors_api">https://api.github.com/repos/ericoporto/%s/contributors</string>
+    <string name="project_details">Project Detail</string>
+    <string name="null_error">Please enter something for search</string>
+    <string name="change_input_type">Change Input Type</string>
+    <string name="speech_prompt">Please speak!</string>
+    <string name="speech_not_supported">This functionality is not supported to your device..</string>
+
+</resources>
