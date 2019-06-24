@@ -111,12 +111,6 @@ public class MainActivity extends BaseActivity implements RepoListAdapter.IListe
 
     }
 
-    @Override
-    public void onItemClick(Item repo) {
-        Intent intent = new Intent(MainActivity.this, RepoDetailsActivity.class);
-        intent.putExtra(Constants.REPO_DATA, repo);
-        startActivity(intent);
-    }
 
     @Override
     public void setResultListView(List<Item> repoData) {
@@ -185,4 +179,10 @@ public class MainActivity extends BaseActivity implements RepoListAdapter.IListe
         }
     }
 
+    @Override
+    public void onItemClick(Item repo) {
+        Intent intent = new Intent(MainActivity.this, RepoDetailsActivity.class);
+        intent.putExtra(Constants.REPO_DATA, repo);
+        startActivity(intent);
+    }
 }

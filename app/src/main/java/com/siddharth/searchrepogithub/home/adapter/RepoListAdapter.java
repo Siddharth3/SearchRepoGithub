@@ -6,6 +6,7 @@ import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import com.siddharth.searchrepogithub.R;
@@ -85,6 +86,8 @@ public class RepoListAdapter extends RecyclerView.Adapter<RepoListAdapter.GroupV
             mRepoListItemBinding.textViewCommit.setText("FORKS COUNT: "+ repo.getForksCount());
             Picasso.with(context).load(repo.getOwner().getAvatarUrl()).memoryPolicy(MemoryPolicy.NO_CACHE)
                     .into(mRepoListItemBinding.imageViewAvatar);
+
+            mRepoListItemBinding.cardViewRepo.setOnClickListener(view -> mListener.onItemClick(repo));
         }
 
     }
